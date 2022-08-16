@@ -116,7 +116,7 @@ const Skills = () => {
                           className="w-20 h-20 mx-auto"
                           width="100%"
                           height="100%"
-                          layout="responsive"
+                          layout="fixed"
                           objectFit="contain"
                         />
                         <p className="mt-4 text-2xl">{skill.name}</p>
