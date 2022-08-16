@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { skills, Skill } from "../skills/config";
 import Image from "next/image";
 

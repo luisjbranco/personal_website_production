@@ -2,8 +2,6 @@ import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import { projects, Project } from "./config";
 import { AiFillGithub } from "react-icons/ai";
-import { Skill } from "../skills/config";
-import Image from "next/image";
 
 const Projects = () => {
   return (

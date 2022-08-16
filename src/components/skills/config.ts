@@ -24,7 +24,7 @@ export type Skill = {
 };
 
 export const getSkill = (names: string[]) => {
-  let toReturn: Skill[] = [];
+  const toReturn: Skill[] = [];
   names.map((name: string) => {
     skills.map((skill: Skill) => {
       if (skill.name.toLowerCase() === name.toLowerCase()) {

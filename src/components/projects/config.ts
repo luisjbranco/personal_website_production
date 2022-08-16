@@ -1,4 +1,4 @@
-import { getSkill, Skill, skills } from "../skills/config";
+import { getSkill, Skill } from "../skills/config";
 import { personalWebsite, projectExample2 } from "../../assets";
 
 export type Project = {
