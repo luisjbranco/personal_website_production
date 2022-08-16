@@ -74,6 +74,10 @@ const Projects = () => {
                     className="absolute z-0 mx-[500px] -my-[420px] h-[400px] max-w-xl w-xl object-cover object-top hover:bg-opacity-50 transform hover:scale-125 border-gray-600 border border-opacity-50 rounded-xl shadow-lg transition-all duration-150"
                     src={project.image.src}
                     alt="project-image"
+                    width="100%"
+                    height="100%"
+                    layout="responsive"
+                    objectFit="contain"
                   ></Image>
                 </div>
               </div>

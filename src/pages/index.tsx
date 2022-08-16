@@ -12,7 +12,7 @@ import BackToTopButton from "../components/BacktoTopButton";
 
 const App: NextPage = () => {
   return (
-    <>
+    <div>
       <Head>
         <title>Luís Branco</title>
         <meta
@@ -34,7 +34,7 @@ const App: NextPage = () => {
       <Separator />
       <Footer />
       <BackToTopButton />
-    </>
+    </div>
   );
 };
 
