@@ -26,7 +26,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="mt-7">
+        <div className="mt-[100px]">
           <button className="text-black text-3xl group border-2 py-3 px-6 my-2 w-fit flex items-center bg-[#E2DCC8] hover:bg-[#D2042D] hover:border-[#D2042D] hover:text-[#DDDDDD]">
             <a href="/resume/Luis_Branco_CV_ENG.pdf" download>
               Download my CV
