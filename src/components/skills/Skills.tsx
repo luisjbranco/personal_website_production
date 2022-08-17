@@ -1,7 +1,5 @@
 import React from "react";
 import { skills, Skill } from "../skills/config";
-import Image from "next/image";
-import { projectExample2 } from "../../assets";
 
 const Skills = () => {
   const [openTab, setOpenTab] = React.useState(1);
