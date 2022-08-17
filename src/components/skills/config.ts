@@ -13,6 +13,7 @@ import {
   tableau,
   tensorflow,
   npm,
+  typescript,
 } from "../../assets";
 
 export type Skill = {
@@ -133,5 +134,12 @@ export const skills: Skill[] = [
     url: "https://www.npmjs.com/",
     img: npm,
     style: "shadow-red-500",
+  },
+  {
+    id: 15,
+    name: "Typescript",
+    url: "https://www.typescriptlang.org/",
+    img: typescript,
+    style: "shadow-blue-500",
   },
 ];

@@ -1,11 +1,12 @@
 import React from "react";
 import { skills, Skill } from "../skills/config";
 import Image from "next/image";
+import { projectExample2 } from "../../assets";
 
 const Skills = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
-    <div id="skills" className="bg-[#413F42] text-[#DDDDDD] w-full h-[150vh]">
+    <div id="skills" className="bg-[#413F42] text-[#DDDDDD] w-full h-auto">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
         <div>
           <p className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#D2042D]">
@@ -99,26 +100,26 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col min-w-0 break-words bg-[#E2DCC8] w-full mb-6 shadow-lg rounded-xl text-[#413F42] text-xl">
+        <div className="flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-xl text-2xl text-[#413F42] shadow-[#E2DCC8]">
           <div className="p-5 flex-auto">
             <div className="tab-content tab-space">
               <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+                <div className="w-full grid md:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
                   {skills.map((skill: Skill) => {
                     return (
-                      <div
-                        key={skill.id}
-                        className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${skill.style}`}
-                      >
-                        <Image
-                          src={skill.img.src}
-                          alt="skill-logo"
-                          className="w-20 h-20 mx-auto"
-                          width="100%"
-                          height="100%"
-                        />
-                        <p className="mt-4 text-2xl">{skill.name}</p>
-                      </div>
+                      <a href={skill.url} target="_blank" rel="noreferrer">
+                        <div
+                          key={skill.id}
+                          className={`text-[#DDDD] shadow-md hover:scale-110 duration-500 py-2 rounded-lg ${skill.style}`}
+                        >
+                          <div className="flex mx-auto w-[150px] h-[150px] justify-center">
+                            <img src={skill.img.src} alt="skill-logo" />
+                          </div>
+                          <p className="capitalize mt-4 text-3xl">
+                            {skill.name}
+                          </p>
+                        </div>
+                      </a>
                     );
                   })}
                 </div>
@@ -127,7 +128,7 @@ const Skills = () => {
                 <div className="flex w-fit h-fit antialiased mb-10 rounded-xl">
                   <div className=" m-auto">
                     <div className="max-w-4xl w-lg grid grid-cols-1">
-                      <div className="p-8 my-3 cursor-default select-none rounded shadow-lg bg-[#413F42]">
+                      <div className="p-8 my-3 cursor-default select-none rounded bg-[#413F42] shadow-[#E2DCC8] shadow-lg">
                         <div className="mb-2 ml-2 text-[#DDDDDD] dark:text-white  ">
                           <h2 className="font-semibold text-5xl">
                             Nova School of Business and Economics{" "}
@@ -149,7 +150,7 @@ const Skills = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="p-8 my-3   cursor-default select-none rounded shadow-lg bg-[#413F42]">
+                      <div className="p-8 my-3   cursor-default select-none rounded shadow-[#E2DCC8] shadow-lg bg-[#413F42]">
                         <div className="mb-2 ml-2 text-[#DDDDDD] dark:text-white  ">
                           <h2 className="font-semibold text-5xl">
                             Insituto de Contabilidade e Administração de Lisboa
@@ -172,11 +173,11 @@ const Skills = () => {
                   </div>
                 </div>
               </div>
-              <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                <div className="flex w-fit h-fit antialiased mb-10 rounded-xl">
-                  <div className="m-auto">
-                    <div className="max-w-4xl w-lg grid grid-cols-1">
-                      <div className="p-8 my-3 cursor-default select-none rounded shadow-lg bg-[#413F42]">
+              <div className={openTab === 3 ? "block " : "hidden"} id="link3">
+                <div className="flex w-fit h-fit antialiased mb-10 rounded-xl ">
+                  <div className="m-auto ">
+                    <div className="max-w-4xl w-lg grid grid-cols-1 ">
+                      <div className="p-8 my-3 cursor-default select-none rounded shadow-[#E2DCC8] shadow-lg bg-[#413F42]">
                         <div className="mb-2 ml-2 text-[#DDDDDD]  dark:text-white  ">
                           <h2 className="font-semibold text-5xl ">
                             IT Startup, Accenture and Nova SBE{" "}
@@ -212,7 +213,7 @@ const Skills = () => {
               </div>
               <div className={openTab === 4 ? "block" : "hidden"} id="link4">
                 <div className="max-w-4xl w-lg grid grid-cols-1">
-                  <div className="p-8 my-3 cursor-default select-none rounded shadow-lg bg-[#413F42] text-[#DDDDDD]">
+                  <div className="p-8 my-3 cursor-default select-none rounded shadow-[#E2DCC8] shadow-lg bg-[#413F42] text-[#DDDDDD]">
                     <div className="mb-2 ml-2">
                       <h2 className="font-semibold text-5xl">Soft Skills </h2>
                     </div>
@@ -227,7 +228,7 @@ const Skills = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="p-8 my-3 cursor-default select-none rounded shadow-lg bg-[#413F42] text-[#DDDDDD]">
+                  <div className="p-8 my-3 cursor-default select-none rounded shadow-[#E2DCC8] shadow-lg bg-[#413F42] text-[#DDDDDD]">
                     <div className="mb-2 ml-2">
                       <h2 className="font-semibold text-5xl">Languages </h2>
                     </div>
