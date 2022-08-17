@@ -116,8 +116,6 @@ const Skills = () => {
                           className="w-20 h-20 mx-auto"
                           width="100%"
                           height="100%"
-                          layout="fixed"
-                          objectFit="contain"
                         />
                         <p className="mt-4 text-2xl">{skill.name}</p>
                       </div>
@@ -139,7 +137,7 @@ const Skills = () => {
                           </h4>
                         </div>
                         <div className="my-2 mx-2 mr-5">
-                          <p className="text-[#DDDDDD] text-2xl">
+                          <div className="text-[#DDDDDD] text-2xl">
                             Relevant Coursework:
                             <ul>
                               <li>Machine Learning</li>
@@ -148,7 +146,7 @@ const Skills = () => {
                               <li>Advanced Programming for Data Science</li>
                               <li>Web and Cloud Computing</li>
                             </ul>
-                          </p>
+                          </div>
                         </div>
                       </div>
                       <div className="p-8 my-3   cursor-default select-none rounded shadow-lg bg-[#413F42]">
@@ -161,13 +159,13 @@ const Skills = () => {
                           </h4>
                         </div>
                         <div className="my-3 mx-2 mr-5">
-                          <p className="text-[#DDDDDD] text-2xl">
+                          <div className="text-[#DDDDDD] text-2xl">
                             <ul>
                               <li>Class Representative</li>
                               <li>ISCAL Academic Excellence Award</li>
                               <li>Project Simulation Winner</li>
                             </ul>
-                          </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -188,7 +186,7 @@ const Skills = () => {
                           </h4>
                         </div>
                         <div className="my-2 mx-2 mr-5">
-                          <p className="text-[#DDDDDD]  text-2xl">
+                          <div className="text-[#DDDDDD]  text-2xl">
                             <ul>
                               <li>
                                 ‣ Developing a Data Science project to forecast
@@ -205,7 +203,7 @@ const Skills = () => {
                                 delivery of a Machine Learning working prototype
                               </li>
                             </ul>
-                          </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -219,14 +217,14 @@ const Skills = () => {
                       <h2 className="font-semibold text-5xl">Soft Skills </h2>
                     </div>
                     <div className="my-2 mx-2 mr-5">
-                      <p className="text-2xl">
+                      <div className="text-2xl">
                         <ul>
                           <li>‣ Predisposition to Lead</li>
                           <li>‣ Identifying and solving problems</li>
                           <li>‣ Competitive Spirit</li>
                           <li>‣ Organized and dedicated</li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="p-8 my-3 cursor-default select-none rounded shadow-lg bg-[#413F42] text-[#DDDDDD]">
@@ -234,14 +232,14 @@ const Skills = () => {
                       <h2 className="font-semibold text-5xl">Languages </h2>
                     </div>
                     <div className="my-2 mx-2 mr-5">
-                      <p className="text-2xl">
+                      <div className="text-2xl">
                         <ul>
                           <li>‣ Portuguese</li>
                           <li>‣ English</li>
                           <li>‣ Mandarin (HSK2 Exam)</li>
                           <li>‣ Spanish (Basic)</li>
                         </ul>
-                      </p>
+                      </div>
                     </div>
                   </div>
                 </div>
