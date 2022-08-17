@@ -107,7 +107,12 @@ const Skills = () => {
                 <div className="w-full grid md:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
                   {skills.map((skill: Skill) => {
                     return (
-                      <a href={skill.url} target="_blank" rel="noreferrer">
+                      <a
+                        key={skill.id}
+                        href={skill.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <div
                           key={skill.id}
                           className={`text-[#DDDD] shadow-md hover:scale-110 duration-500 py-2 rounded-lg ${skill.style}`}
