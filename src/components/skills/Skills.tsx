@@ -5,8 +5,8 @@ import Image from "next/image";
 const Skills = () => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
-    <div id="skills" className="bg-[#413F42] text-[#DDDDDD] w-full h-[140vh]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center">
+    <div id="skills" className="bg-[#413F42] text-[#DDDDDD] w-full h-[150vh]">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
         <div>
           <p className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#D2042D]">
             Skills & Experience

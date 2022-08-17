@@ -7,9 +7,9 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full md:h-[120vh] bg-[#413F42] text-[#DDDDDD]"
+      className="w-full md:h-[150vh] bg-[#413F42] text-[#DDDDDD]"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
         {/* Title */}
         <div className="pb-8">
           <p className="text-4xl sm:text-7xl font-bold inline border-b-4 border-[#D2042D]">
