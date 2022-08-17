@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div id="home" className="w-full h-screen bg-[#413F42] text-[#DDDDDD]">
+    <div
+      id="home"
+      className="w-full h-screen sm:h-[120vh] bg-[#413F42] text-[#DDDDDD]"
+    >
       {/* Intro Text and button */}
       <div className="max-w-screen-lg mx-auto px-4 flex flex-col justify-center items-center h-full md:flex-row">
         <div className="flex flex-col justify-center h-full">
