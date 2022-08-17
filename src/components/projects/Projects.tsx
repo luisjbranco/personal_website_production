@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full md:h-screen bg-[#413F42] text-[#DDDDDD]"
+      className="w-full md:h-[120vh] bg-[#413F42] text-[#DDDDDD]"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* Title */}
