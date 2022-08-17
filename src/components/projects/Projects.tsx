@@ -5,10 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 const Projects = () => {
   return (
-    <div
-      id="projects"
-      className="w-full md:h-[150vh] bg-[#413F42] text-[#DDDDDD]"
-    >
+    <div id="projects" className="w-full h-auto bg-[#413F42] text-[#DDDDDD]">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center">
         {/* Title */}
         <div className="pb-8">
@@ -19,67 +16,59 @@ const Projects = () => {
         </div>
         {/* Title */}
         {/* Project cards */}
-        <div>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project: Project) => {
             return (
-              <div
-                key={uuidv4()}
-                className="flex w-fit h-fit antialiased mb-10 rounded-xl bg-[#E2DCC8]"
-              >
-                <div className=" m-auto">
-                  <div className="z-50 p-8 mt-0 max-w-lg w-lg grid grid-cols-1 cursor-default select-none rounded dark:bg-gray-900 shadow-lg ">
-                    <div className="font-semibold text-5xl mb-2 ml-2 text-gray-900 dark:text-white">
-                      {project.name}
-                    </div>
-                    <div className="my-2 mx-2 mr-5">
-                      <p className="text-gray-900 text-2xl">
-                        {project.description}
-                      </p>
-                    </div>
-                    <div>
-                      <div className="font-semibold text-2xl text-gray-900">
-                        Tech Stack:
-                      </div>
-                      <div className="my-3">
-                        <span className="transform transition-all duration-150 inline-block bg-blue-400 bg-opacity-75 rounded px-3 py-2 text-xl font-thin text-blue-900  hover:shadow-lg  hover:scale-105">
-                          ReactJS
-                        </span>
-                        <span className="transform transition-all duration-150 inline-block bg-pink-400 bg-opacity-100 rounded px-3 py-2  text-xl font-thin text-pink-900  hover:shadow-lg  hover:scale-105">
-                          Tailwind
-                        </span>
-                        <span className="transform transition-all duration-150 inline-block bg-yellow-400  bg-opacity-75 rounded px-3 py-2  text-xl font-thin text-yellow-900 hover:shadow-lg  hover:scale-105">
-                          Javascript
-                        </span>
-                      </div>
-                    </div>
-                    <div className="flex p-3 mt-3">
-                      <button className="transform mouse-pointer bg-gray-900 text-lg text-white mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-gray-700 dark:hover:bg-gray-600 hover:scale-90   focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
-                        <AiFillGithub />
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          GitHub
-                        </a>
-                      </button>
-                      <button className="transform mouse-pointer bg-gray-900 text-lg text-white px-4 font-semibold rounded hover:bg-gray-700 dark:hover:bg-gray-600  hover:scale-90 dark:focus:bg-gray-600 focus:outline-none">
-                        Demo
-                      </button>
-                    </div>
-                  </div>
+              <div key={uuidv4()} className="shadow-[#E2DCC8] shadow-lg p-4">
+                <div>
                   <img
-                    className="absolute z-0 mx-[500px] -my-[420px] h-[400px] max-w-xl w-xl object-cover object-top hover:bg-opacity-50 transform hover:scale-125 border-gray-600 border border-opacity-50 rounded-xl shadow-lg transition-all duration-150"
+                    className="w-full object-cover rounded-2xl hover:scale-105 duration-500"
                     src={project.image.src}
-                    alt="project-image"
                   ></img>
+                </div>
+                <h3 className="text-3xl p-3 md:text-5xl mb-2 md:mb-3 border-b-4 border-[#D2042D]">
+                  {project.name}
+                </h3>
+                <p className="text-xl md:text-3xl m-4">{project.description}</p>
+                <div className="flex flex-wrap flex-row gap-2 items-center justify-center text-lg">
+                  {project.technologies.map((item) => (
+                    <span
+                      key={item.id}
+                      className="inline-block px-2 py-1 rounded-lg bg-[#D2042D] text-[#DDDDDD] text-2xl text-bold"
+                    >
+                      {item.name}
+                    </span>
+                  ))}
+                </div>
+                <div className="mx-[15%] flex p-3 mt-3 text-[#413F42]">
+                  <button className="transform mouse-pointer bg-[#E2DCC8] mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-[#D2042D] hover:scale-90 focus:outline-none hover:text-white">
+                    <AiFillGithub style={{ fill: "#413F42" }} size={50} />
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xl"
+                    >
+                      GitHub
+                    </a>
+                  </button>
+                  <button className="transform mouse-pointer bg-[#E2DCC8] px-4 font-semibold rounded hover:bg-[#D2042D] hover:scale-90 focus:outline-none ml-6 hover:text-white">
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xl"
+                    >
+                      Check it out!
+                    </a>
+                  </button>
                 </div>
               </div>
             );
           })}
         </div>
         {/* Project cards */}
-        <div className="items-center mt-7">
+        <div className="items-center mt-[100px]">
           <p className="text-3xl text-bold text-center mt-7 mb-2 ">
             You can find my other projects on my GitHub
           </p>

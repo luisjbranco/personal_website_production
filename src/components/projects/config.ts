@@ -36,7 +36,7 @@ export const projects: Project[] = [
     github: "",
     technologies: getSkill([
       "react",
-      "typescript",
+      "javascript",
       "html",
       "css",
       "git",
