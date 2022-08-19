@@ -5,6 +5,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
 
 @layer base {
+  html {
+    height: 100%;
+    min-height: 100%;
+  }
   body {
     font-family: "Ubuntu Mono", monospace;
   }
