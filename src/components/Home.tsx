@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="w-full md:h-screen sm:h-[200vh] bg-[#413F42] text-[#DDDDDD]"
+      className="pt-[200px] w-full md:h-screen sm:h-auto bg-[#413F42] text-[#DDDDDD]"
     >
       {/* Intro Text and button */}
       <div className="max-w-screen-lg mx-auto px-4 flex flex-col justify-center items-center h-full md:flex-row">
