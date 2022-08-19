@@ -1,7 +1,6 @@
 import React from "react";
 import { profilePic } from "../assets";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import Image from "next/image";
 
 const Home = () => {
   return (
