@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "My personal portfolio and biggest project of Web Development. Future works include animation libraries and more projects.",
     image: personalWebsite,
     url: "https://luisbranco.vercel.app/",
-    github: "https://github.com/luisjbranco/personal_website",
+    github: "https://github.com/luisjbranco/personal_website_production",
     technologies: [
       "React",
       "Typescript",
