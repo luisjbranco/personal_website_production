@@ -41,17 +41,12 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="mx-[15%] flex p-3 mt-3 text-[#413F42]">
-                  <button className="mouse-pointer bg-[#E2DCC8] mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-[#D2042D] hover:scale-90 focus:outline-none hover:text-white">
-                    <AiFillGithub style={{ fill: "#413F42" }} size={50} />
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-xl"
-                    >
-                      GitHub
-                    </a>
-                  </button>
+                  <a href={project.github} target="_blank" rel="noreferrer">
+                    <button className="mouse-pointer bg-[#E2DCC8] mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-[#D2042D] hover:scale-90 focus:outline-none hover:text-white">
+                      <AiFillGithub style={{ fill: "#413F42" }} size={50} />
+                      <p className="text-xl">GitHub</p>
+                    </button>
+                  </a>
                   <button className="mouse-pointer bg-[#E2DCC8] px-4 font-semibold rounded hover:bg-[#D2042D] hover:scale-90 focus:outline-none ml-6 hover:text-white">
                     <a
                       href={project.url}
