@@ -23,3 +23,4 @@ export { default as typescript } from "./typescript_logo.png";
 export { default as npm } from "./npm_logo.png";
 export { default as nodeJs } from "./nodejs.png";
 export { default as blogWebsite } from "./blog_website.png";
+export { default as keeperApp } from "./keeper_app.png";

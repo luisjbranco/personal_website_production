@@ -1,4 +1,4 @@
-import { personalWebsite, projectExample2, blogWebsite } from "../../assets";
+import { personalWebsite, keeperApp, blogWebsite } from "../../assets";
 
 export type Project = {
   name: string;
@@ -27,12 +27,12 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: "Keep 2.0",
+    name: "Keeper 2.0",
     description:
       "A google keep clone to apply acquired knowledge on React. It allows to create and save notes.",
-    image: projectExample2,
-    url: "",
-    github: "",
+    image: keeperApp,
+    url: "https://keeper-app-two-beta.vercel.app/",
+    github: "https://github.com/luisjbranco/keeper_app",
     technologies: ["React", "Javascript", "HTML", "CSS", "Git", "NodeJs"],
   },
   {
