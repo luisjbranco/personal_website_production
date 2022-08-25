@@ -9,7 +9,7 @@ const Navbar = () => {
   const completion = useReadingProgress();
 
   return (
-    <div className="fixed z-1 w-full h-[80px] flex justify-between items-center px-4 bg-[#E2DCC8] ">
+    <div className="fixed z-50 w-full h-[80px] flex justify-between items-center px-4 bg-[#E2DCC8] ">
       <Link to="home">
         <div className="flex  cursor-pointer">
           <div className="self-center bg-[#D2042D] text-[#EBD5D5] flex flex-col text-xl font-bold h-[40px] justify-center min-h-[40px] min-w-[40px] w-[40px] text-center">
