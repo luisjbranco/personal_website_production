@@ -33,15 +33,15 @@ const Projects = () => {
                 <div className="flex flex-wrap flex-row gap-2 items-center justify-center text-lg">
                   {project.technologies.map((item) => (
                     <span
-                      key={item.id}
+                      key={uuidv4()}
                       className="inline-block px-2 py-1 rounded-lg bg-[#D2042D] text-[#DDDDDD] text-2xl text-bold"
                     >
-                      {item.name}
+                      {item}
                     </span>
                   ))}
                 </div>
                 <div className="mx-[15%] flex p-3 mt-3 text-[#413F42]">
-                  <button className="transform mouse-pointer bg-[#E2DCC8] mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-[#D2042D] hover:scale-90 focus:outline-none hover:text-white">
+                  <button className="mouse-pointer bg-[#E2DCC8] mx-2 py-2 px-4 font-semibold rounded mr-[30px] hover:bg-[#D2042D] hover:scale-90 focus:outline-none hover:text-white">
                     <AiFillGithub style={{ fill: "#413F42" }} size={50} />
                     <a
                       href={project.github}
@@ -52,7 +52,7 @@ const Projects = () => {
                       GitHub
                     </a>
                   </button>
-                  <button className="transform mouse-pointer bg-[#E2DCC8] px-4 font-semibold rounded hover:bg-[#D2042D] hover:scale-90 focus:outline-none ml-6 hover:text-white">
+                  <button className="mouse-pointer bg-[#E2DCC8] px-4 font-semibold rounded hover:bg-[#D2042D] hover:scale-90 focus:outline-none ml-6 hover:text-white">
                     <a
                       href={project.url}
                       target="_blank"

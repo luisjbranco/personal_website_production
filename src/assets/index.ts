@@ -21,3 +21,5 @@ export { default as tailwind } from "./tailwind_logo.png";
 export { default as tensorflow } from "./tensorflow_logo.png";
 export { default as typescript } from "./typescript_logo.png";
 export { default as npm } from "./npm_logo.png";
+export { default as nodeJs } from "./nodejs.png";
+export { default as blogWebsite } from "./blog_website.png";

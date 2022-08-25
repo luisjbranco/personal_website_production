@@ -1,5 +1,4 @@
-import { getSkill, Skill } from "../skills/config";
-import { personalWebsite, projectExample2 } from "../../assets";
+import { personalWebsite, projectExample2, blogWebsite } from "../../assets";
 
 export type Project = {
   name: string;
@@ -7,7 +6,7 @@ export type Project = {
   image: any;
   url: string;
   github: string;
-  technologies: Skill[];
+  technologies: string[];
 };
 
 export const projects: Project[] = [
@@ -16,16 +15,16 @@ export const projects: Project[] = [
     description:
       "My personal portfolio and biggest project of Web Development. Future works include animation libraries and more projects.",
     image: personalWebsite,
-    url: "",
+    url: "https://luisbranco.vercel.app/",
     github: "https://github.com/luisjbranco/personal_website",
-    technologies: getSkill([
-      "react",
-      "typescript",
-      "html",
-      "css",
-      "git",
-      "npm",
-    ]),
+    technologies: [
+      "React",
+      "Typescript",
+      "HTML",
+      "Tailwind CSS",
+      "Git",
+      "NextJs",
+    ],
   },
   {
     name: "Keep 2.0",
@@ -34,13 +33,22 @@ export const projects: Project[] = [
     image: projectExample2,
     url: "",
     github: "",
-    technologies: getSkill([
-      "react",
-      "javascript",
-      "html",
-      "css",
-      "git",
-      "npm",
-    ]),
+    technologies: ["React", "Javascript", "HTML", "CSS", "Git", "NodeJs"],
+  },
+  {
+    name: "Blog Website",
+    description:
+      "A blog website with backend development and a database connection.",
+    image: blogWebsite,
+    url: "https://pure-reef-59993.herokuapp.com/",
+    github: "https://github.com/luisjbranco/blog_site",
+    technologies: [
+      "JavaScript",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDB",
+      "Ejs",
+      "Bootstrap",
+    ],
   },
 ];

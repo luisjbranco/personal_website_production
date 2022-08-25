@@ -14,6 +14,7 @@ import {
   tensorflow,
   npm,
   typescript,
+  nodeJs,
 } from "../../assets";
 
 export type Skill = {
@@ -141,5 +142,12 @@ export const skills: Skill[] = [
     url: "https://www.typescriptlang.org/",
     img: typescript,
     style: "shadow-blue-500",
+  },
+  {
+    id: 16,
+    name: "NodeJs",
+    url: "https://nodejs.org/en/",
+    img: nodeJs,
+    style: "shadow-green-400",
   },
 ];
